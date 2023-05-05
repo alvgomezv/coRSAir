@@ -2,9 +2,11 @@
 
 import argparse
 from OpenSSL import crypto
-from Crypto.PublicKey import RSA
-from Crypto.Random import get_random_bytes
-from Crypto.Cipher import PKCS1_v1_5
+
+from Crypto import PublicKey, Random, Cipher
+from PublicKey import RSA
+from Random import get_random_bytes
+from Cipher import PKCS1_v1_5
 import random
 
 def gcd(a, b):
