@@ -1,12 +1,11 @@
+#!/usr/bin/python3
 #!/goinfre/alvgomez/miniconda3/envs/42cyber-alvgomez/bin/python
 
 import argparse
 from OpenSSL import crypto
-
-from Crypto import PublicKey, Random, Cipher
-from PublicKey import RSA
-from Random import get_random_bytes
-from Cipher import PKCS1_v1_5
+from Crypto.PublicKey import RSA
+from Crypto.Random import get_random_bytes
+from Crypto.Cipher import PKCS1_v1_5
 import random
 
 def gcd(a, b):
